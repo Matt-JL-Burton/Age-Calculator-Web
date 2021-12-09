@@ -1,2 +1,9 @@
-var firstPrime = 2;
-const listOfPrime = [];
+var listOfPrime = [2];
+// while (true) {
+//     var initialConstOfMultiplication = 1;
+//     for (var i = 0; i < listOfPrime.length; i++){
+//         initialConstOfMultiplication = initialConstOfMultiplication * listOfPrime[i]
+//     } 
+//     listOfPrime.push(initialConstOfMultiplication)
+//     console.log(listOfPrime)
+// }
