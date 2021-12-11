@@ -1,11 +1,12 @@
-var listOfPrime = [2];
+function workOutPrime() {
+    var multiplactionOfPreviousPrimes = 1
+    for (var i = 0; i < listOfPrimes.length; i ++){
+        multiplactionOfPreviousPrimes = multiplactionOfPreviousPrimes *  listOfPrimes[i]
+    }
+    listOfPrimes.push(multiplactionOfPreviousPrimes + 1)
+    console.log(listOfPrimes)
+};
 
+let listOfPrimes = [2];
 
-// while (true) {
-//     var initialConstOfMultiplication = 1;
-//     for (var i = 0; i < listOfPrime.length; i++){
-//         initialConstOfMultiplication = initialConstOfMultiplication * listOfPrime[i]
-//     } 
-//     listOfPrime.push(initialConstOfMultiplication+1)
-//     console.log(listOfPrime)
-// }
+setInterval(workOutPrime,5000);
