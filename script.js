@@ -10,4 +10,4 @@ function workOutPrime() {
 let listOfPrimes = [2];
 
 setInterval(workOutPrime,5000);
-// streaking
+// streaking 2
