@@ -1,4 +1,19 @@
 body {
     background:#2097c1;
+    border: red 10px solid;
+    font-family: 'Arial Narrow','Candara','Arial';
+}
+
+.inner {  
+    /* border: 5px solid black; */
+    margin: auto;
     text-align: center;
+}
+
+.outer {
+    border: 5px solid blue;
+    width:100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
 }
