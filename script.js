@@ -1,1 +1,4 @@
-console.log('Test this is still connected')
+function getDataFromDateBox() {
+    var entereDate = document.getElementById('MainDate').value;
+    console.log(entereDate)
+};

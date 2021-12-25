@@ -21,13 +21,18 @@ body {
 #MainDate{
     text-align: center;
     justify-content: center;
-    width: calc(500px);
-    border-radius:  20px;
+    width: calc(1000px);
+    border-radius:  30px;
     border: 0px;
-    height: calc(20px + 1%);
+    height: calc(40px + 1%);
 }
 
 #MainHeader{
     /* text-shadow: 0px 0px 20px white; should be used if an image goes behind   */
     text-size-adjust: auto;
+    font-size: 80px;
+}
+
+#submitButton {
+    position: absolute;
 }
