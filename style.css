@@ -34,10 +34,18 @@ body {
 }
 
 #submitButton {
-    position: absolute;
     justify-content: center;
     height: calc(20px + 0.1%);
     width: calc(50px + 0.1);
     border-radius: 30px;
-    border:0px 
+    background-color: white;
+    border: 0px;
+}
+
+button:hover {
+    border: 10px solid black;
+}
+
+input:hover {
+    border: 10px solid black;
 }
