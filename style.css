@@ -42,10 +42,10 @@ body {
     border: 0px;
 }
 
-button:hover {
-    border: 10px solid black;
+#submitButton:hover {
+    border: 1px solid black;
 }
 
-input:hover {
-    border: 10px solid black;
+#MainDate:hover {
+    border: 1px solid black;
 }
