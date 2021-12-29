@@ -40,6 +40,7 @@ body {
     border-radius: 30px;
     background-color: white;
     border: 0px;
+    margin: calc(10px + 1%) 0px;
 }
 
 #submitButton:hover {
