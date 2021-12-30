@@ -35,8 +35,8 @@ body {
 
 #submitButton {
     justify-content: center;
-    height: calc(20px + 0.1%);
-    width: calc(50px + 0.1);
+    height: calc(25px + 0.1%);
+    width: calc(70px + 0.1);
     border-radius: 30px;
     background-color: white;
     border: 0px;
