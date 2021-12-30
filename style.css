@@ -18,7 +18,7 @@ body {
     justify-content: center;
 }
 
-#MainDate{
+#mainDate{
     text-align: center;
     justify-content: center;
     width: calc(1000px);
@@ -27,7 +27,7 @@ body {
     height: calc(40px + 1%);
 }
 
-#MainHeader{
+#mainHeader{
     /* text-shadow: 0px 0px 20px white; should be used if an image goes behind   */
     text-size-adjust: auto;
     font-size: 80px;
@@ -47,6 +47,16 @@ body {
     border: 1px solid black;
 }
 
-#MainDate:hover {
+#mainDate:hover {
     border: 1px solid black;
+}
+
+.errorMes{
+    color: red;
+    display: none;
+}
+
+#validDateErrorMes {
+    position: absolute;
+    text-align: center;
 }

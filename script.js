@@ -1,5 +1,5 @@
 function getDataFromDateBox() {
-    var enteredDate = (document.getElementById('MainDate').value).replace(/-/g,"/");
+    var enteredDate = (document.getElementById('mainDate').value).replace(/-/g,"/");
     if (!(isNaN(Date.parse(enteredDate)))) {
         console.log('Valid date')
         currentURLList = window.location.href.split('/')    
@@ -7,8 +7,7 @@ function getDataFromDateBox() {
         newURL = currentURLList.join('/')
         window.location.href = newURL
     } else {
-        console.log("invalid data")
-        // add error message
+        document.getElementById('validDateErrorMes').style.display = "block"
     }
 };
 
