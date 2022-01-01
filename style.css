@@ -60,7 +60,7 @@ body {
 #validDateErrorMes {
     position: absolute;
     text-align: center;
-    border: 10px blue solid;
+    /* border: 10px blue solid; */
     left: 30%;
     right: 30%;
 }
