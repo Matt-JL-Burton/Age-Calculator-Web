@@ -10,6 +10,5 @@ function getDataFromDateBox() {
         document.getElementById('validDateErrorMes').style.display = "block"
     }
 };
-
 // TODO: 
 // need to learn to import modules
