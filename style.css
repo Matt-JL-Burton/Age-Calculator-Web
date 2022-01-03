@@ -19,6 +19,29 @@ body {
     justify-content: center;
 }
 
+.loadingDiv {
+    width: calc(800px + 1%);
+    height: calc(400px + 1%);
+    border-radius: 50px;
+    background-color: white;
+    justify-content: center;
+    margin: auto;
+    text-align: center;
+    box-shadow: grey 0px 0px 10px;
+}
+
+.LoadingIcon{
+    width: calc(50px + 1%);
+    height: calc(50px + 1%);
+    margin: auto;
+    /* FIXME: need to center loading div in page  */
+}
+
+.errorMes{
+    color: red;
+    display: none;
+}
+
 #mainDate{
     text-align: center;
     justify-content: center;
@@ -51,11 +74,6 @@ body {
 
 #mainDate:hover {
     border: 1px solid black;
-}
-
-.errorMes{
-    color: red;
-    display: none;
 }
 
 #validDateErrorMes {
