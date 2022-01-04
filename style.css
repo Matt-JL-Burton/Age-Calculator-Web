@@ -8,7 +8,6 @@ body {
     /* border: 5px solid black; */
     margin: auto;
     text-align: center;
-    display: none;
 }
 
 .outer {
@@ -28,13 +27,13 @@ body {
     margin: auto;
     text-align: center;
     box-shadow: grey 0px 0px 10px;
+    display: none;
 }
 
 .LoadingIcon{
     width: calc(50px + 1%);
     height: calc(50px + 1%);
     margin: auto;
-    /* FIXME: need to center loading div in page  */
 }
 
 .errorMes{
