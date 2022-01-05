@@ -7,7 +7,11 @@ function getDataFromDateBox() {
         newURL = currentURLList.join('/')
         window.location.href = newURL
     } else {
-        document.getElementById('validDateErrorMes').style.display = "block"
+        // the function of the timeout is to flash the error message so the user knows it is wrong again
+        document.getElementById('validDateErrorMes').style.display = "none"
+        setTimeout(function(){
+            document.getElementById('validDateErrorMes').style.display = "block"
+        },100)
     }
 };
 // TODO: 
