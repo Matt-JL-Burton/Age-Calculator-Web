@@ -1,3 +1,2 @@
-let x = document.cookie
-console.log(x)
-console.log("Hello World")
+let date = localStorage.getItem('Date')
+document.getElementById('Age').innerHTML = date
