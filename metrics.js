@@ -1,2 +1,2 @@
 let date = localStorage.getItem('Date')
-document.getElementById('Age').innerHTML = date
+document.getElementById('dateDisplay').innerHTML = date

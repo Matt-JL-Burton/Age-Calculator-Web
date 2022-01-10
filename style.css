@@ -8,7 +8,7 @@ body {
     /* border: 5px solid black; */
     margin: auto;
     text-align: center;
-    display: block;
+    /* display: block;  */
 }
 
 .outer {
@@ -82,4 +82,13 @@ body {
     /* border: 10px blue solid; */
     left: 30%;
     right: 30%;
+}
+
+#metricsPageMainDiv{
+    width: calc(1000px + 5%);
+    height: calc(500px + 5%);
+    background-color: white;
+    border-radius: 50px;
+    box-shadow: grey 0px 0px 10px;
+    flex-direction: column;
 }
