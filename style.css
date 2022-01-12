@@ -92,3 +92,8 @@ body {
     box-shadow: grey 0px 0px 10px;
     flex-direction: column;
 }
+
+#eightyPercentDiv{
+    height: 70%;
+    flex-direction: column;
+}
