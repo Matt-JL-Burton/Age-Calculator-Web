@@ -11,7 +11,6 @@ const timeSinceEpochinMSForEntered = formattedDate.getTime()
 var formattedDateNow = new Date()
 const timeSinceEpochinMSForNow = new Date()
 var timeDifference = timeSinceEpochinMSForEntered - timeSinceEpochinMSForNow
-console.log(timeDifference)
 document.getElementById('timeSinceNowms').innerHTML = "Time since now : " + String(timeDifference) + "ms"
 
 var completeYears = Math.floor(timeDifference / 31556952000.0)
