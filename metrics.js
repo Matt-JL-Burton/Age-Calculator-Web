@@ -3,6 +3,13 @@ function workOutCompleteMonthsPass(timeInMs,startDate,completedyears) {
     let listOfMothsDates = [31,28,31,30,31,30,31,31,30,31,30,31]
 }
 
+function goBackPage(){
+    currentURLList = window.location.href.split('/')    
+    currentURLList[currentURLList.length-1] = 'index.html'
+    newURL = currentURLList.join('/')
+    window.location.href = newURL
+}
+
 let date = localStorage.getItem('Date')
 document.getElementById('dateDisplay').innerHTML = "Entered Date : " + String(String(date).split("/").reverse()).replace(/,/g,"/")
 

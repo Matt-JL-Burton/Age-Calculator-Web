@@ -42,6 +42,17 @@ body {
     display: none;
 }
 
+.button{
+    justify-content: center;
+    height: calc(25px + 0.1%);
+    width: calc(70px + 0.1%);
+    border-radius: 30px;
+    background-color: white;
+    border: 0px;
+    margin: calc(10px + 1%) 0px;
+    box-shadow: grey 0px 0px 10px;
+}
+
 #mainDate{
     text-align: center;
     justify-content: center;
@@ -96,4 +107,12 @@ body {
 #eightyPercentDiv{
     height: 70%;
     flex-direction: column;
+}
+
+#backButton{
+    position: absolute;
+    margin: 5px;
+    width: calc(50px + 2%);
+    height: max-content;
+    padding: 10px;
 }
