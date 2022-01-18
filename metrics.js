@@ -15,12 +15,19 @@ document.getElementById('dateDisplay').innerHTML = "Entered Date : " + String(St
 
 var formattedDate = new Date(date.replace(/\//g,"-"));
 const timeSinceEpochinMSForEntered = formattedDate.getTime()
-var formattedDateNow = new Date()
-const timeSinceEpochinMSForNow = new Date()
+console.log(timeSinceEpochinMSForEntered) //This bit works
+var currentDate = new Date()
+const timeSinceEpochinMSForNow = currentDate.getTime()
+console.log(timeSinceEpochinMSForNow)
+
 var timeDifference = timeSinceEpochinMSForEntered - timeSinceEpochinMSForNow
 document.getElementById('timeSinceNowms').innerHTML = "Time since now : " + String(timeDifference) + "ms"
 
 var completeYears = Math.floor(timeDifference / 31556952000.0)
+if (timeDifference < 0) {
+    completeYears = completeYears + 1
+}
+
 var remainingTime = timeDifference - (completeYears * 31556952000.0)
 
 document.getElementById("timeSinceNowTotalYears").innerHTML = "Time since now : " + String(completeYears) + " complete years"
