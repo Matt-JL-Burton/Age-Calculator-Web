@@ -1,5 +1,6 @@
 function workOutCompleteMonthsPass(timeInMs,startDate,completedyears) {
     var listOfDate = startDate.split("/")
+    console.log(listOfDate)
     let listOfMothsDates = [31,28,31,30,31,30,31,31,30,31,30,31]
 }
 
@@ -15,10 +16,8 @@ document.getElementById('dateDisplay').innerHTML = "Entered Date : " + String(St
 
 var formattedDate = new Date(date.replace(/\//g,"-"));
 const timeSinceEpochinMSForEntered = formattedDate.getTime()
-console.log(timeSinceEpochinMSForEntered) //This bit works
 var currentDate = new Date()
 const timeSinceEpochinMSForNow = currentDate.getTime()
-console.log(timeSinceEpochinMSForNow)
 
 var timeDifference = timeSinceEpochinMSForEntered - timeSinceEpochinMSForNow
 document.getElementById('timeSinceNowms').innerHTML = "Time since now : " + String(timeDifference/1000) + "seconds"
@@ -30,6 +29,6 @@ if (timeDifference < 0) {
 
 var remainingTime = timeDifference - (completeYears * 31556952000.0)
 
-
 document.getElementById("timeSinceNowTotalYears").innerHTML = "Time since now : " + String(completeYears) + " complete years"
-var months = Math.floor(timeDifference)
+
+workOutCompleteMonthsPass(remainingTime,date,completeYears)
