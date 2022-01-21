@@ -1,5 +1,5 @@
 function workOutCompleteMonthsPass(timeInMs,startDate,completedyears) {
-    var listOfDate = startDate.split("/")
+    var listOfDate = startDate.split("/").reverse()
     console.log(listOfDate)
     let listOfMothsDates = [31,28,31,30,31,30,31,31,30,31,30,31]
 }
