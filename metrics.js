@@ -1,7 +1,11 @@
 function workOutCompleteMonthsPass(timeInMs,startDate,completedyears) {
-    var listOfDate = startDate.split("/").reverse()
-    console.log(listOfDate)
+    startDate = startDate.split("/").reverse()
+    endDate = startDate
+    console.log(startDate)
+    endDate[2] = String(Number(endDate[2]) + Number(completeYears))
     let listOfMothsDates = [31,28,31,30,31,30,31,31,30,31,30,31]
+    console.log(startDate)
+    console.log(endDate)
 }
 
 function goBackPage(){
@@ -32,3 +36,5 @@ var remainingTime = timeDifference - (completeYears * 31556952000.0)
 document.getElementById("timeSinceNowTotalYears").innerHTML = "Time since now : " + String(completeYears) + " complete years"
 
 workOutCompleteMonthsPass(remainingTime,date,completeYears)
+
+// FIXME: found the issue is with the date entered
