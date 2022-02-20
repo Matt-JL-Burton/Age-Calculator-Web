@@ -17,7 +17,5 @@ function getDataFromDateBox() {
     }
 };
 
-console.log(Math.floor(-0.341413))
-
 // TODO: 
 // need to learn to import modules
