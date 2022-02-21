@@ -1,15 +1,20 @@
-function daysAndMonthsCalculations(currentDate,endDate,completeYears) {
+function daysAndMonthsCalculations(currentDate,endDate,completeYears,timeDifference) {
+    console.log(currentDate,endDate)
     var listOfMonthlyLength = [31,28,31,30,31,30,31,31,30,31,30,31]
     currentDate[2] = currentDate[2] + completeYears
     days = endDate[0] - currentDate[0]
     month = endDate[1] - currentDate[1]
-    if ((completeYears < 0 && days > 0) || (completeYears > 0 && days < 0)){
+    console.log(month)
+    console.log(days)
+    console.log(timeDifference)
+    if ((timeDifference < 0 && days > 0) || (timeDifference > 0 && days < 0)){
         if (completeYears < 0){
             month = month -1
         } else {
             month = month + 1
         }
     }
+    console.log(month)
 
 }
 
@@ -46,4 +51,4 @@ for (i = 0; i < date.length; i ++){
     date[i] = Number(date[i])
 }
 
-daysAndMonthsCalculations(currentDateList,date.reverse(),completeYears)
+daysAndMonthsCalculations(currentDateList,date.reverse(),completeYears,timeDifference)
