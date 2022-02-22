@@ -4,9 +4,6 @@ function daysAndMonthsCalculations(currentDate,endDate,completeYears,timeDiffere
     currentDate[2] = currentDate[2] + completeYears
     days = endDate[0] - currentDate[0]
     month = endDate[1] - currentDate[1]
-    console.log(month)
-    console.log(days)
-    console.log(timeDifference)
     if ((timeDifference < 0 && days > 0) || (timeDifference > 0 && days < 0)){
         if (completeYears < 0){
             month = month -1
@@ -14,7 +11,7 @@ function daysAndMonthsCalculations(currentDate,endDate,completeYears,timeDiffere
             month = month + 1
         }
     }
-    console.log(month)
+    console.log(month,days)
 
 }
 
