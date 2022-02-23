@@ -11,8 +11,7 @@ function daysAndMonthsCalculations(currentDate,endDate,completeYears,timeDiffere
             month = month + 1
         }
     }
-    console.log(month,days)
-
+    console.log(month,days,currentDate)
 }
 
 function goBackPage(){
@@ -47,5 +46,4 @@ date = date.split("/")
 for (i = 0; i < date.length; i ++){
     date[i] = Number(date[i])
 }
-
 daysAndMonthsCalculations(currentDateList,date.reverse(),completeYears,timeDifference)
