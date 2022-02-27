@@ -9,6 +9,7 @@ function daysAndMonthsCalculations(currentDate,endDate,completeYears,timeDiffere
             month = month -1
         } else {
             month = month + 1
+            // streak keeping
         }
     }
 }
