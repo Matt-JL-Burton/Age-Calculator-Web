@@ -1,19 +1,3 @@
-function daysAndMonthsCalculations(currentDate,endDate,completeYears,timeDifference) {
-    console.log(currentDate,endDate)
-    var listOfMonthlyLength = [31,28,31,30,31,30,31,31,30,31,30,31]
-    currentDate[2] = currentDate[2] + completeYears
-    days = endDate[0] - currentDate[0]
-    month = endDate[1] - currentDate[1]
-    if ((timeDifference < 0 && days > 0) || (timeDifference > 0 && days < 0)){
-        if (completeYears < 0){
-            month = month -1
-        } else {
-            month = month + 1
-            // streak keeping
-        }
-    }
-}
-
 function goBackPage(){
     currentURLList = window.location.href.split('/')
     currentURLList[currentURLList.length-1] = 'index.html'
@@ -37,13 +21,14 @@ var completeYears = Math.floor(timeDifference / 31556952000.0)
 if (timeDifference < 0) {
     completeYears = completeYears + 1
 }
+console.log(completeYears)
 
 var remainingTime = timeDifference - (completeYears * 31556952000.0)
+var days = (remainingTime/(86400000)).toFixed(2)
 
-document.getElementById("timeSinceNowTotalYears").innerHTML = "Time since now : " + String(completeYears) + " complete years"
+document.getElementById("timeSinceNowTotalYears").innerHTML = "Time since now : " + String(completeYears) + "  years " + days + " days"
 
-date = date.split("/")
-for (i = 0; i < date.length; i ++){
-    date[i] = Number(date[i])
-}
-daysAndMonthsCalculations(currentDateList,date.reverse(),completeYears,timeDifference)
+// TODO:
+// if less than 100 days till day
+// present hours till midnight
+// else present days and years
