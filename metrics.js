@@ -26,7 +26,11 @@ console.log(completeYears)
 var remainingTime = timeDifference - (completeYears * 31556952000.0)
 var days = (remainingTime/(86400000)).toFixed(2)
 
-document.getElementById("timeSinceNowTotalYears").innerHTML = "Time since now : " + String(completeYears) + "  years " + days + " days"
+if (completeYears == 0){
+    document.getElementById("timeSinceNowTotalYears").innerHTML = "Time since now : " + days + " days"
+} else {
+    document.getElementById("timeSinceNowTotalYears").innerHTML = "Time since now : " + String(completeYears) + "  years " + days + " days"
+}
 
 // TODO:
 // if less than 100 days till day
