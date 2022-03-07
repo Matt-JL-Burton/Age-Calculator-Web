@@ -116,3 +116,8 @@ body {
     height: max-content;
     padding: 10px;
 }
+
+#timeTillMidnight{
+    margin-top: 0cm;
+    padding: 0cm;
+}

@@ -31,8 +31,3 @@ if (completeYears == 0){
 } else {
     document.getElementById("timeSinceNowTotalYears").innerHTML = "Time since now : " + String(completeYears) + "  years " + days + " days"
 }
-
-// TODO:
-// if less than 100 days till day
-// present hours till midnight
-// else present days and years
