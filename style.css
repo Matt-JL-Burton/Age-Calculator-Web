@@ -61,6 +61,7 @@ body {
     border: 0px;
     height: calc(40px + 1%);
     margin: 20px 200px;
+    margin-bottom: 5px;
 }
 
 #mainHeader{
