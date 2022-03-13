@@ -53,7 +53,7 @@ body {
     box-shadow: grey 0px 0px 10px;
 }
 
-#mainDate{
+.dateEntry{
     text-align: center;
     justify-content: center;
     width: calc(1000px);
@@ -62,6 +62,10 @@ body {
     height: calc(40px + 1%);
     margin: 20px 200px;
     margin-bottom: 5px;
+}
+
+.dateEntry:hover {
+    border: 1px solid black;
 }
 
 #mainHeader{
@@ -81,10 +85,6 @@ body {
 }
 
 #submitButton:hover {
-    border: 1px solid black;
-}
-
-#mainDate:hover {
     border: 1px solid black;
 }
 

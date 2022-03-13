@@ -1,5 +1,5 @@
 function getDataFromDateBox() {
-    var enteredDate = (document.getElementById('mainDate').value).replace(/-/g,"/");
+    var enteredDate = (document.getElementById('endDate').value).replace(/-/g,"/");
     if (!(isNaN(Date.parse(enteredDate)))) {
         document.getElementById('MainPageMainDiv').style.display = "none"
         document.getElementById('mainPageLoadingDiv').style.display = "flex"
