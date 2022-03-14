@@ -1,4 +1,5 @@
 function getDataFromDateBox() {
+    var startDate = (document.getElementById('startDate').value).replace(/-/g,"/");
     var enteredDate = (document.getElementById('endDate').value).replace(/-/g,"/");
     if (!(isNaN(Date.parse(enteredDate)))) {
         document.getElementById('MainPageMainDiv').style.display = "none"
