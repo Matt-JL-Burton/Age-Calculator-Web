@@ -5,8 +5,10 @@ function goBackPage(){
     window.location.href = newURL
 }
 
-let date = localStorage.getItem('Date')
+let date = localStorage.getItem('endDate')
 document.getElementById('dateDisplay').innerHTML = "Entered Date : " + String(String(date).split("/").reverse()).replace(/,/g,"/")
+
+// need to replace current date with enterd start date
 
 var formattedDate = new Date(date.replace(/\//g,"-"));
 const timeSinceEpochinMSForEntered = formattedDate.getTime()
