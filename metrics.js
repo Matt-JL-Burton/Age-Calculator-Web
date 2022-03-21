@@ -23,7 +23,6 @@ var completeYears = Math.floor(timeDifference / 31556952000.0)
 if (timeDifference < 0) {
     completeYears = completeYears + 1
 }
-console.log(completeYears)
 
 var remainingTime = timeDifference - (completeYears * 31556952000.0)
 var days = (remainingTime/(86400000)).toFixed(2)
