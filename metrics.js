@@ -6,13 +6,13 @@ function goBackPage(){
 }
 
 let date = localStorage.getItem('endDate')
-document.getElementById('dateDisplay').innerHTML = "Entered Date : " + String(String(date).split("/").reverse()).replace(/,/g,"/")
+let startDate = localStorage.getItem('startDate')
 
-// need to replace current date with enterd start date
+document.getElementById('dateDisplay').innerHTML = "Entered Date : " + String(String(date).split("/").reverse()).replace(/,/g,"/")
 
 var formattedDate = new Date(date.replace(/\//g,"-"));
 const timeSinceEpochinMSForEntered = formattedDate.getTime()
-var currentDate = new Date()
+var currentDate = new Date(startDate.replace(/\//g,"-"))
 const timeSinceEpochinMSForNow = currentDate.getTime()
 currentDateList = [currentDate.getDate(),currentDate.getMonth(),currentDate.getFullYear()]
 
@@ -25,7 +25,7 @@ if (timeDifference < 0) {
 }
 
 var remainingTime = timeDifference - (completeYears * 31556952000.0)
-var days = (remainingTime/(86400000)).toFixed(2)
+var days = (remainingTime/(86400000)).toFixed(0)
 
 if (completeYears == 0){
     document.getElementById("timeSinceNowTotalYears").innerHTML = "Time since now : " + days + " days"
