@@ -8,7 +8,8 @@ function goBackPage(){
 let date = localStorage.getItem('endDate')
 let startDate = localStorage.getItem('startDate')
 
-document.getElementById('dateDisplay').innerHTML = "Entered Date : " + String(String(date).split("/").reverse()).replace(/,/g,"/")
+document.getElementById('dateDisplay2').innerHTML = "Start Date : " + String(String(startDate).split("/").reverse()).replace(/,/g,"/")
+document.getElementById('dateDisplay').innerHTML = "End Date : " + String(String(date).split("/").reverse()).replace(/,/g,"/")
 
 var formattedDate = new Date(date.replace(/\//g,"-"));
 const timeSinceEpochinMSForEntered = formattedDate.getTime()
